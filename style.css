@@ -5,10 +5,20 @@
   --cor-secundaria: #92f206;
   --cor-destaque: #A08C52;
 }
-
-body {
-  font-family: "Chakra Petch", sans-serif;
+.lead {
+  color: white;
+  font-weight: 700;
 }
+
+a,
+.btn-link:hover {
+  color: var(--cor-principal);
+}
+
+a:hover {
+  color: var(--cor-destaque);
+}
+
 
 h1,
 h2,

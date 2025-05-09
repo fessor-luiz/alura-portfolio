@@ -9,11 +9,15 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfólio</title>
   </head>
 
-  <body style="background-color: #374BA6;">
+  <body style="background-color: #374ba6">
     <header class="container text-center">
       <img
         class="rounded-circle border border-3 border-warning"
@@ -21,12 +25,12 @@
         src="src/img/profile_pic.png"
         alt="Imagem Profesor"
       />
-      <h1 class="display-1 ">Fessor Luiz_</h1>
-      <p class="lead ">
+      <h1 class="display-1">Fessor Luiz_</h1>
+      <p class="lead">
         Um professor de história que gosta de tecnologia e leciona no Estado de
         São Paulo
       </p>
-      <h2 class="display-5 ">Habilidades</h2>
+      <h2 class="display-5">Habilidades</h2>
       <div class="container">
         <p class="badge rounded-pill text-bg-warning">JS</p>
         <p class="badge rounded-pill text-bg-warning">CSS</p>
@@ -38,65 +42,270 @@
     </header>
 
     <main class="container mt-5 text-center">
-      <h2 class="display-5 ">Projetos pessoais</h2>
+      <h2 class="display-5">Projetos pessoais</h2>
       <div class="row">
         <!-- Projeto 1 -->
         <div class="col-md-4 my-2">
           <div class="card border border-warning bg-warning">
-            <img src="src/img/p1.png" class="card-img-top  object-fit-cover" style=" height: 300px;"  alt="..." />
+            <img
+              src="src/img/p1.png"
+              class="card-img-top object-fit-cover"
+              style="height: 300px"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Canva - Pixel Art</h5>
               <p class="card-text">
                 Um projeto que gera uma tela para ser utilizada na criação de
                 Pixel Art. Criada no Scratch
               </p>
-              <a type="button" class="btn btn-link">Vejo o projeto</a>
+              <a
+                type="button"
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+                >Vejo o projeto</a
+              >
             </div>
           </div>
         </div>
         <!-- Projeto 2 -->
         <div class="col-md-4 my-2">
           <div class="card border border-3 border-secondary bg-warning">
-            <img src="src/img/p2.png" style=" height: 300px;"  class="card-img-top object-fit-cover" alt="..." />
+            <img
+              src="src/img/p2.png"
+              style="height: 300px"
+              class="card-img-top object-fit-cover"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Acertei na Mega?</h5>
               <p type="button" class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a class="btn btn-link">Vejo o projeto</a>
+              <a
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+                >Vejo o projeto</a
+              >
             </div>
           </div>
         </div>
         <!-- Projeto 3 -->
         <div class="col-md-4 my-2">
           <div class="card border border-warning bg-warning">
-            <img src="src/img/p3.png"  class="card-img-top object-fit-cover" style=" height: 300px;" alt="..." />
+            <img
+              src="src/img/p3.png"
+              class="card-img-top object-fit-cover"
+              style="height: 300px"
+              alt="..."
+            />
             <div class="card-body">
-              <h5 class="card-title ">Pokemon Showdown</h5>
+              <h5 class="card-title">Pokemon Showdown</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a type="button" class="btn btn-link">Vejo o projeto</a>
+              <a
+                type="button"
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+                >Vejo o projeto</a
+              >
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="container py-2 text-center">
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Canva - Pixel Art</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate pulvinar mauris, in tempor augue cursus id. Suspendisse
+              id nunc eget tellus condimentum euismod nec vitae mi. Fusce
+              gravida varius tempor. Duis congue luctus blandit. Donec vel
+              viverra purus, id faucibus libero. Nunc a dictum quam. Vestibulum
+              ut volutpat orci. Maecenas vestibulum est quis rutrum feugiat.
+              Suspendisse luctus faucibus convallis. Aliquam commodo sagittis
+              sagittis. Sed fermentum mollis sem eget iaculis. Nam blandit est
+              et ornare tempor. Aliquam ull
+            </p>
+            <p>
+              Vivamus semper, felis in auctor gravida, augue ipsum aliquam
+              nulla, ut lobortis libero dolor ut neque. Etiam euismod, metus et
+              porta tincidunt, magna nisi venenatis velit, sit amet ultrices
+              nulla nisi eu eros. Nullam feugiat diam vitae venenatis luctus.
+              Aenean at turpis a quam posuere lobortis.
+            </p>
+            <img
+              src="src/img/p1.png"
+              class="img-fluid"
+              alt="Imagem ilustrativa"
+            />
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-warning">Ver projeto ao vivo</a>
+            <a href="" class="btn btn-warning">Ver código do projeto</a>
+            <a
+              href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
+              target="_blank"
+              class="btn btn-warning"
+              >SED</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Canva - Pixel Art</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate pulvinar mauris, in tempor augue cursus id. Suspendisse
+              id nunc eget tellus condimentum euismod nec vitae mi. Fusce
+              gravida varius tempor. Duis congue luctus blandit. Donec vel
+              viverra purus, id faucibus libero. Nunc a dictum quam. Vestibulum
+              ut volutpat orci. Maecenas vestibulum est quis rutrum feugiat.
+              Suspendisse luctus faucibus convallis. Aliquam commodo sagittis
+              sagittis. Sed fermentum mollis sem eget iaculis. Nam blandit est
+              et ornare tempor. Aliquam ull
+            </p>
+            <p>
+              Vivamus semper, felis in auctor gravida, augue ipsum aliquam
+              nulla, ut lobortis libero dolor ut neque. Etiam euismod, metus et
+              porta tincidunt, magna nisi venenatis velit, sit amet ultrices
+              nulla nisi eu eros. Nullam feugiat diam vitae venenatis luctus.
+              Aenean at turpis a quam posuere lobortis.
+            </p>
+            <img
+              src="src/img/p2.png"
+              class="img-fluid"
+              alt="Imagem ilustrativa"
+            />
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-warning">Ver projeto ao vivo</a>
+            <a href="" class="btn btn-warning">Ver código do projeto</a>
+            <a
+              href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
+              target="_blank"
+              class="btn btn-warning"
+              >SED</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Canva - Pixel Art</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate pulvinar mauris, in tempor augue cursus id. Suspendisse
+              id nunc eget tellus condimentum euismod nec vitae mi. Fusce
+              gravida varius tempor. Duis congue luctus blandit. Donec vel
+              viverra purus, id faucibus libero. Nunc a dictum quam. Vestibulum
+              ut volutpat orci. Maecenas vestibulum est quis rutrum feugiat.
+              Suspendisse luctus faucibus convallis. Aliquam commodo sagittis
+              sagittis. Sed fermentum mollis sem eget iaculis. Nam blandit est
+              et ornare tempor. Aliquam ull
+            </p>
+            <p>
+              Vivamus semper, felis in auctor gravida, augue ipsum aliquam
+              nulla, ut lobortis libero dolor ut neque. Etiam euismod, metus et
+              porta tincidunt, magna nisi venenatis velit, sit amet ultrices
+              nulla nisi eu eros. Nullam feugiat diam vitae venenatis luctus.
+              Aenean at turpis a quam posuere lobortis.
+            </p>
+            <img
+              src="src/img/p3.png"
+              class="img-fluid"
+              alt="Imagem ilustrativa"
+            />
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-warning">Ver projeto ao vivo</a>
+            <a href="" class="btn btn-warning">Ver código do projeto</a>
+            <a
+              href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
+              target="_blank"
+              class="btn btn-warning"
+              >SED</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container py-5 text-center">
       <h2 class="">Entre em contato</h2>
       <div class="text-warning text-center">
-       <div class="gap-1 d-inline-flex flex-column">
-           <a class="badge bg-warning fs-6" target="_blank" href="http://github.com/fessor-luiz">GitHub</a>
-           <a class="badge bg-warning fs-6" href="mailto:luizegydio@prof.educacao.sp.gov.br">Email Institucional</a>
-       </div>
-        <p style="color: var(--cor-secundaria);">Desenvolvido pelo melhor psô <span style="font-size: 10px;">(da minha casa)</span> que existe!</p>
-    </div>
-    <!-- ffc107 -->
-    <p class="my-5 text-center  border-top d-inline">
-      © Copyright 2025. Produzido por Fessor Luiz
-    </p>
+        <div class="gap-1 d-inline-flex flex-column">
+          <div>
+            <i class="bi bi-github"></i>
+            <a
+              class="badge bg-warning fs-6"
+              target="_blank"
+              href="http://github.com/fessor-luiz"
+              >GitHub
+            </a>
+          </div>
+          <a
+            class="badge bg-warning fs-6"
+            href="mailto:luizegydio@prof.educacao.sp.gov.br"
+            >Email Institucional</a
+          >
+        </div>
+        <p style="color: var(--cor-secundaria)">
+          Desenvolvido pelo melhor psô
+          <span style="font-size: 10px">(da minha casa)</span> que existe!
+        </p>
+      </div>
+      <!-- ffc107 -->
+      <p class="my-5 text-center border-top d-inline">
+        © Copyright 2025. Produzido por Fessor Luiz
+      </p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
